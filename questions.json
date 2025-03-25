@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "question": "Who was the first Prime Minister of India?",
+    "options": ["Jawaharlal Nehru", "Lal Bahadur Shastri", "Indira Gandhi", "Rajendra Prasad"],
+    "answer": "Jawaharlal Nehru"
+  },
+  {
+    "id": 2,
+    "question": "In which year did India gain independence?",
+    "options": ["1947", "1950", "1935", "1942"],
+    "answer": "1947"
+  },
+  {
+    "id": 3,
+    "question": "Which Article of the Indian Constitution provides for free and compulsory education for children?",
+    "options": ["Article 21", "Article 19", "Article 21-A", "Article 14"],
+    "answer": "Article 21-A"
+  },
+  {
+    "id": 4,
+    "question": "The Finance Commission of India is constituted under which Article of the Constitution?",
+    "options": ["Article 280", "Article 300", "Article 269", "Article 275"],
+    "answer": "Article 280"
+  },
+  {
+    "id": 5,
+    "question": "Which of the following is a key feature of the Panchayati Raj system?",
+    "options": ["Centralized planning", "Local self-government", "State control over local bodies", "None of the above"],
+    "answer": "Local self-government"
+  }
+]
