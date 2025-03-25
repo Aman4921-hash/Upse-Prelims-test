@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ultimate Civil Services Challenge</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- jsPDF library from CDN for PDF generation -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    // Disable right-click and copy events for fairness
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.addEventListener('copy', event => event.preventDefault());
+  </script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Ultimate Civil Services Challenge</h1>
+      <div id="real-time-clock"></div>
+    </header>
+
+    <!-- User Details Form -->
+    <section id="user-info">
+      <h2>Enter Your Details</h2>
+      <form id="user-form">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <button type="submit">Start Quiz</button>
+      </form>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz-section" class="hidden">
+      <div class="progress-info">
+        <span id="progress-text"></span>
+      </div>
+      <div id="question-container" class="fade">
+        <h2 id="question-text"></h2>
+        <ul id="options-list"></ul>
+      </div>
+      <div id="timer">30</div>
+      <div class="nav-buttons">
+        <button id="prev-button" class="nav-btn hidden">Previous</button>
+        <button id="skip-button" class="nav-btn">Skip</button>
+        <button id="next-button" class="nav-btn">Next</button>
+      </div>
+    </section>
+
+    <!-- Loading Section -->
+    <section id="loading-section" class="hidden">
+      <h2>Please wait while your result is being calculated...</h2>
+    </section>
+
+    <!-- Results Section -->
+    <section id="result-section" class="hidden">
+      <h2>Your Score: <span id="final-score"></span></h2>
+      <div id="report-card"></div>
+      <button id="download-pdf">Download Report Card (PDF)</button>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
